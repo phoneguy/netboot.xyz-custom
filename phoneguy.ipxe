@@ -10,8 +10,8 @@ item --gap This is the first sub menu
 item option_one ${space} Loading a kernel and initrd
 item option_two ${space} Loading an ISO
 item --gap This is a second sub menu
-item option_three ${space} Loads another custom sub menu
-item option_four ${space} This is option four
+item option_three ${space} Boot from Github
+item option_four ${space} Boot from boot.netboot.xyz
 choose custom_choice || goto custom_exit
 echo ${cls}
 goto ${custom_choice}
@@ -29,12 +29,11 @@ initrd http://path.to/iso
 boot || goto custom_exit
 
 :option_three
-echo Chains into another menu...
+echo Booting from Phoneguys netboot.xyz-custom master branch
 chain https://raw.githubusercontent.com/phoneguy/netboot.xyz-custom/master/custom.ipxe || goto custom
 
 :option_four
-echo Chains into another menu...
-
+echo Booting from boot.netboot.xyz
 chain --autofree http://boot.netboot.xyz
 
 :custom_exit
