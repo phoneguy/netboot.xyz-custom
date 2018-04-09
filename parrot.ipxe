@@ -1,0 +1,19 @@
+#!ipxe
+###
+### netboot.xyz-custom menu
+###
+
+:parrot_start
+echo Run Parrot Security Live
+:parrot_boot
+set parrotsec_initrd https://mirrordirector.archive.parrotsec.org/parrot/dists/${parrotsec_version}/main/installer-${arch_a}/current/images/netboot/mini.iso
+kernel ${memdisk} iso raw
+initrd ${parrotsec_initrd}
+boot
+goto parrot_exit
+##sleep 10
+##goto custom_exit
+
+:parrot_exit
+clear menu
+exit 0
