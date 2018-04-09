@@ -31,6 +31,7 @@ boot || goto custom_exit
 :option_three
 echo Booting from Phoneguys netboot.xyz-custom master branch
 chain https://raw.githubusercontent.com/phoneguy/netboot.xyz-custom/master/custom.ipxe || goto custom
+exit
 
 :option_four
 echo Booting from boot.netboot.xyz
