@@ -25,7 +25,9 @@ boot || goto custom_exit
 
 :option_two
 kernel https://boot.netboot.xyz/memdisk raw iso
-initrd http://path.to/iso
+initrd https://iweb.dl.sourceforge.net/project/parrotsecurity/iso/3.11/Parrot-security-3.11_amd64.iso
+
+###http://path.to/iso
 boot || goto custom_exit
 
 :option_three

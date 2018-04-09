@@ -5,7 +5,7 @@
 
 :start
 echo Hello world! It works!!
-
+goto parrot_start
 sleep 10
 goto custom_exit
 
