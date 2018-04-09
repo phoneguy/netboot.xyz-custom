@@ -34,8 +34,8 @@ chain https://raw.githubusercontent.com/phoneguy/netboot.xyz-custom/master/custo
 
 :option_four
 echo Chains into another menu...
-dhcp
-chain --autofree https://boot.netboot.xyz
+
+chain --autofree http://boot.netboot.xyz
 
 :custom_exit
 chain utils.ipxe
