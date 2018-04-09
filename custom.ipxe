@@ -4,7 +4,8 @@
 ###
 
 :start
-echo Hello world!
+echo Hello world! It works!!
+
 sleep 10
 goto custom_exit
 
