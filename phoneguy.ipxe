@@ -25,7 +25,7 @@ boot || goto custom_exit
 
 :option_two
 kernel  https://raw.githubusercontent.com/phoneguy/netboot.xyz-custom/master/memdisk raw iso
-initrd http://raspberrypi/iso/parrotsecurity/iso/3.11/Parrot-security-3.11_amd64.iso
+initrd http://hprouter/iso/parrotsecurity/iso/3.11/Parrot-security-3.11_amd64.iso
 
 ###http://path.to/iso
 boot || goto custom_exit
